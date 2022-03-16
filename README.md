@@ -19,6 +19,10 @@ imuFilter/examples/heading/heading.ino を改変したもの．
 - X/Z 0.01 deg 程度
 - Y 0.02 - 0.03 deg程度，時間がたつと多少ドリフトする．
 
+## 配置
+
+<img src = "arduino_ssd1306_mpu6050.png" width = "30%"></img>  
+
 ## 参考
 
 - [imuFilter](https://github.com/RCmags/imuFilter)
