@@ -8,3 +8,6 @@ Arduinoにi2c接続したSSD1306に姿勢表示をする．
 * basicMPU6050
 * U8glib
 
+imuFilter/examples/heading/heading.ino を改変したもの．
+X/Y/Z の姿勢をrad/degで表示するだけ．
+
