@@ -14,6 +14,11 @@ imuFilter/examples/heading/heading.ino を改変したもの．
 - X/Y/Z の姿勢をrad/degで表示する
 - 温度を表示する
 
+## 精度
+
+- X/Z 0.01 deg 程度
+- Y 0.02 - 0.03 deg程度，時間がたつと多少ドリフトする．
+
 ## 参考
 
 - [imuFilter](https://github.com/RCmags/imuFilter)
