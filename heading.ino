@@ -68,18 +68,6 @@ void setup() {
                           // Exact angle rotation = false 
   fusion.rotateHeading( SMALL_ANG, dot );
 
-/*
-  // Display results:
-  Serial.print( "y = " ); 
-  printVector( axis_y );
-  Serial.print( "v2 = " ); 
-  printVector( v2 );
-  Serial.print( "v1 = " ); 
-  printVector( v1 );
-  Serial.print( "dot = ");
-  Serial.println( dot );
-*/
-
 // assign default color value
   if ( u8g.getMode() == U8G_MODE_BW ) {
     u8g.setColorIndex(1);         // pixel on
@@ -98,15 +86,7 @@ float tmp;
 
 void loop() {  
   // Update filter:
-  fusion.update( imu.gx(), imu.gy(), imu.gz(), imu.ax(), imu.ay(), imu.az() );    
-
-  // Display angles:
-  //Serial.print( fusion.pitch() );
-  //Serial.print( "," );
-  //Serial.print( fusion.yaw() );
-  //Serial.print( "," );
-  //Serial.print( fusion.roll() );
-  //Serial.println();
+  fusion.update( imu.gx(), imu.gy(), imu.gz(), imu.ax(), imu.ay(), imu.az() ); 
 
   u8g.firstPage();//描画開始
   do {
